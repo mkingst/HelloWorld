@@ -49,6 +49,9 @@
 				<exclude name="**/*.java" />
 			</fileset>
 		</copy>
+		 <presetdef name="javac">
+    <javac includeantruntime="false" />
+  </presetdef>
 	</target>
 	<target name="clean">
 		<delete dir="build/classes" />
